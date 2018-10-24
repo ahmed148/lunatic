@@ -1,0 +1,285 @@
+/* 
+    Default Color 
+        1. #ff867a pink 
+        2. #6858db purple 
+        3. #22233b heading  / 48px 
+        4. #56576e text     / 16px 
+        5. #f6f6f9 light grey 
+
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1) / 0 0 30px -5px #c9c9c9
+        icon 70px, 70px, rotate(45deg), 6 radius
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1)
+        
+*/
+/* General  */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.5;
+}
+p{
+    color: #56576e;
+    line-height: 1.5;
+}
+.page-title {
+
+    font-size: 1.5rem;
+    text-align: center;
+    color: #22233b;
+    font-weight: bold;
+}
+/* Header */
+header{
+
+    width: 100vw;
+    height: 80vh;
+
+    background-image: url(../images/header-bg-1.jpg);
+    background-size: cover;
+    background-position: right bottom / 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav{
+
+}
+nav ul { 
+
+    list-style: none;
+}
+nav ul li {
+
+    float: left;
+    margin-right: 8px;
+}
+nav ul li a {
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #6858db;
+    /* transition: property time-functioning time  */
+    transition: color ease-in-out 200ms;
+}
+nav ul li a:hover {
+
+    color: #ff867a;
+    border-bottom: 1px solid #ff867a;
+    
+ }
+
+.logo {
+
+    position: relative;
+    top: 10px;
+}
+
+.main-content {
+
+    margin-top: 100px;
+}
+.main-content  h1 {
+
+    color: #6858db;
+}
+
+
+
+#service-area {
+
+    text-align: center;
+}
+
+.service-box{
+    padding: 50px 0px;
+    transition: all 300ms ease-in-out;
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+
+}
+.service-box:hover{
+
+    box-shadow: none;
+    transform: translateY(10px);
+    transform: scale(1.2)
+}
+.service-icon{
+
+    background: #22233b;
+    display: inline-block;
+    padding: 15px;
+    transform: rotate(45deg);
+}
+.service-box img {
+    transform: rotate(-45deg);
+}
+
+
+#social-area img{
+    width: 100%;
+}
+
+.counter-boxes li{
+    display: inline-block;
+    padding: 50px;
+    transition: all 300ms ease-in-out;
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+    list-style: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.counter-boxes li:hover{
+    box-shadow: none;
+    transform: translateY(10px);
+    transform: scale(1.2)
+}
+
+.counter, .count{
+    color: pink;
+}
+
+.single-team{
+    
+    transition: all 300ms ease-in-out;
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+    border-radius: 50% 50% 0 0;
+
+}
+.single-team:hover{
+
+    box-shadow: none;
+    transform: translateY(10px);
+    transform: scale(1.2);
+}
+
+.team-photo{
+margin: 0;
+
+}
+.team-photo img{
+    width: 200px;
+    height: 200px;
+    
+}
+#team-page{
+
+    text-align: center;
+}
+
+#blog{
+    text-align: center;
+}
+
+.single-faq{
+    background-color: #f6f6f9;
+    padding: 50px 0px;
+    transition: all 300ms ease-in-out;
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+    border-radius: 50% 0 50% 0;
+
+}
+.single-faq:hover{
+
+    box-shadow: none;
+    transform: translateY(10px);
+    transform: scale(1.2)
+}
+.main-content img, a{
+    float: left;
+}
+#google{
+    margin-top: 2px;
+    margin-right: 2px;
+}
+.bttn-content img, a{
+    float: left;
+}
+
+.user {
+    padding: 0 17px;
+
+}
+
+footer{
+    background-color: #22233b ;
+    margin-top: 20px;
+}
+footer p{
+    color: white;
+    text-align: center;
+}
+footer li{
+    color: #ff867a;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    nav{
+        display: none;
+    }
+    .main-content{
+        margin-top: -20px;
+    }
+
+    .main-content a{
+     margin: auto; 
+     margin-left: 2px;   
+    }
+    #service-area{
+        margin-top: -80px;
+    }
+    #download-area a{
+        margin: auto;
+        margin-left: 2px;
+    }
+}
+@media(min-width:320px) and (max-width:568px){
+   
+}
+@media(min-width:768px)and (max-width:1024px){  /* tablet  768-991 */  
+  
+    .team-photo img {
+        width: 100px;
+        height: 100px;
+    }
+    nav{   
+         margin-left: -80px;}
+
+    .main-content a{
+            margin: auto; 
+            margin-left: 5px;   
+           }
+    #download-area a{
+            margin: auto;
+            margin-left: 5px;
+        }         
+    #service-area{
+        margin-top: -400px;
+    }
+}
+@media(min-width:992px){ /* Desktop/laptop 992-1199 */
+
+}
+@media(min-width:1200px){ /* large screen */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
